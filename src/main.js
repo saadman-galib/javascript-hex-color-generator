@@ -1,7 +1,7 @@
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.querySelector(".click-me");
 const code = document.querySelector(".code");
-const codeSpan = code.querySelector("span");
+const codeSpan = document.querySelector(".code span");
 const r = document.querySelector(":root");
 
 function getRandomNumber() {
@@ -22,5 +22,9 @@ btn.addEventListener("click", () => {
     document.body.style.backgroundColor = colorCode;
     btn.style.backgroundColor = colorCode;
     r.style.setProperty("--shadow", `0 0 55px 1px ${colorCode}`);
-    code.innerHTML = `Hex Code: <span style="background-color: ${colorCode}">${colorCode}</span>`;
+    code.innerHTML = `Hex Code: <span style="background-color: ${colorCode}">${colorCode} <i class="fa-regular fa-copy"></i> </span>`;
+});
+
+codeSpan.addEventListener("click", () => {
+    console.log("clicked");
 });

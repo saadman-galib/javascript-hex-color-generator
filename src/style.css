@@ -19,6 +19,7 @@ body,
     min-height: 100vh;
     min-width: 100%;
     font-family: "Poppins", sans-serif;
+    transition: 0.5s;
 }
 
 #app {
@@ -44,7 +45,7 @@ body,
     transition: 0.5s;
     background-color: #333333;
     color: #fff;
-    transition-property: box-shadow;
+    transition-property: box-shadow background-color;
 }
 
 .click-me:hover {
@@ -59,6 +60,11 @@ body,
     background-color: #fff;
     border-radius: 18px;
     padding: 38px;
+    transition: 0.5s;
+}
+
+.container:hover {
+    box-shadow: 0 2px 32px 15px #ffffff1d;
 }
 
 .code {
@@ -72,6 +78,19 @@ body,
     margin-left: 8px;
     border-radius: 8px;
     color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.code i {
+    width: 0px;
+    opacity: 0;
+}
+
+.code span:hover > i {
+    animation: showIcon 0.5s ease-in forwards;
+    width: auto;
 }
 
 @media (max-width: 768px) {
@@ -88,5 +107,21 @@ body,
     .click-me,
     .code {
         font-size: 16px;
+    }
+}
+
+@keyframes showIcon {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+
+    30% {
+        width: auto;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
