@@ -112,6 +112,7 @@ body,
     transition: 0.5s;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
+    display: none;
 }
 
 .notification p {
