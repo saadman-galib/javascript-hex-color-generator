@@ -22,9 +22,9 @@ btn.addEventListener("click", () => {
     document.body.style.backgroundColor = colorCode;
     btn.style.backgroundColor = colorCode;
     r.style.setProperty("--shadow", `0 0 55px 1px ${colorCode}`);
-    code.innerHTML = `Hex Code: <span style="background-color: ${colorCode}">${colorCode} <i class="fa-regular fa-copy"></i> </span>`;
+    code.innerHTML = `Hex Code: <span style="background-color: ${colorCode}" onclick="copyCode(this.textContent)">${colorCode}<i class="fa-regular fa-copy"></i></span>`;
 });
 
-codeSpan.addEventListener("click", () => {
+function copyCode() {
     console.log("clicked");
-});
+}
