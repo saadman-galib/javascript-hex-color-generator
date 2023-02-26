@@ -25,7 +25,4 @@ btn.addEventListener("click", () => {
     code.innerHTML = `Hex Code: <span style="background-color: ${colorCode}" onclick="copyCode(this.textContent)">${colorCode}<i class="fa-regular fa-copy"></i></span>`;
 });
 
-function copyCode(text) {
-    navigator.clipboard.writeText(text);
-    console.log("copied");
-}
+

@@ -27,7 +27,17 @@
                 </p>
                 <button class="click-me">Click me</button>
             </div>
+            <div class="notification">
+                <div class="notification-color"></div>
+                <p>#333333 has been copied to clipboard</p>
+            </div>
         </div>
         <script type="module" src="./src/main.js"></script>
+        <script>
+            function copyCode(text) {
+                navigator.clipboard.writeText(text);
+                console.log("copied");
+            }
+        </script>
     </body>
 </html>

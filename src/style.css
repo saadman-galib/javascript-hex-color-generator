@@ -27,6 +27,7 @@ body,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .heading {
@@ -94,6 +95,37 @@ body,
     width: auto;
 }
 
+.notification {
+    position: absolute;
+    min-width: 80px;
+    max-width: 240px;
+    min-height: 20px;
+    top: 40px;
+    right: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+}
+
+.notification p{
+    text-align: left;
+    width: 70%;
+}
+
+.notification-color {
+    min-width: 35px;
+    min-height: 35px;
+    margin: 6px 12px 6px 6px;
+    border-radius: 4px;
+    background-color: #333;
+    
+
+}
+
 @media (max-width: 768px) {
     .container {
         margin: 25px;
@@ -123,7 +155,7 @@ body,
         opacity: 0;
         margin: auto 10px;
     }
-    
+
     to {
         opacity: 1;
         margin: auto 4px auto 6px;
