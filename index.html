@@ -21,23 +21,18 @@
                 <h2 class="heading">Get random background color</h2>
                 <p class="code">
                     Hex Code:
-                    <span onclick="copyCode(this.textContent)"
-                        >#333333<i class="fa-regular fa-copy"></i
-                    ></span>
+                    <span>#333333<i class="fa-regular fa-copy"></i></span>
                 </p>
                 <button class="click-me">Click me</button>
             </div>
             <div class="notification">
                 <div class="notification-color"></div>
-                <p>#333333 has been copied to clipboard</p>
+                <p>
+                    <span style="color: #333">#333333</span> copied to
+                    clipboard!
+                </p>
             </div>
         </div>
         <script type="module" src="./src/main.js"></script>
-        <script>
-            function copyCode(text) {
-                navigator.clipboard.writeText(text);
-                console.log("copied");
-            }
-        </script>
     </body>
 </html>

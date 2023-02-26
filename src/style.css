@@ -81,7 +81,6 @@ body,
     color: #fff;
     cursor: pointer;
     transition: 0.5s;
-    transition-delay: 0.2s;
 }
 
 .code i {
@@ -102,16 +101,20 @@ body,
     min-height: 20px;
     top: 40px;
     right: 40px;
-    background-color: #fff;
+    background-color: #ffffffa0;
     border-radius: 4px;
     z-index: 3;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 6px;
+    box-shadow: 0 0 25px 5px #ffffff4f;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
 }
 
-.notification p{
+.notification p {
     text-align: left;
     width: 70%;
 }
@@ -122,8 +125,6 @@ body,
     margin: 6px 12px 6px 6px;
     border-radius: 4px;
     background-color: #333;
-    
-
 }
 
 @media (max-width: 768px) {
